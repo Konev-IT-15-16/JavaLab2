@@ -14,13 +14,13 @@
 
 <h3>Статические методы</h3>
 
-<h4>getInputString(Scanner scanner, String prompt)</h4>
+<h4>getInputString(Scanner scanner, String text)</h4>
 <ul>
     <li><strong>Назначение:</strong> Ввод и валидация строковых значений</li>
     <li><strong>Параметры:</strong>
         <ul>
             <li><code>scanner</code> - объект Scanner для чтения ввода</li>
-            <li><code>prompt</code> - сообщение для пользователя</li>
+            <li><code>text</code> - сообщение для пользователя</li>
         </ul>
     </li>
     <li><strong>Возвращает:</strong> Валидную строку</li>
@@ -33,13 +33,13 @@
     </li>
 </ul>
 
-<h4>getInputInt(Scanner scanner, String prompt, int min, int max)</h4>
+<h4>getInputInt(Scanner scanner, String text, int min, int max)</h4>
 <ul>
     <li><strong>Назначение:</strong> Ввод и валидация целых чисел в заданном диапазоне</li>
     <li><strong>Параметры:</strong>
         <ul>
             <li><code>scanner</code> - объект Scanner для чтения ввода</li>
-            <li><code>prompt</code> - сообщение для пользователя</li>
+            <li><code>text</code> - сообщение для пользователя</li>
             <li><code>min</code> - минимальное допустимое значение</li>
             <li><code>max</code> - максимальное допустимое значение</li>
         </ul>
