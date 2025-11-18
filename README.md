@@ -226,6 +226,6 @@ Fraction product = f1.multiply(f2); // 1/3 * 2/3 = 2/9
 // Сложное выражение
 Fraction result = f1.add(f2).divide(f3).subtract(5);</code>
 <div align "center">
-  ![Дроби].(./main/screenshots.Fraction.png)
+  <img src="./screenshots/Fraction.png" alt="Дроби" width="600"/>
 </div>
 </pre>
