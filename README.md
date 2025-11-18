@@ -142,7 +142,7 @@ System.out.println(name3); // Маяковский Владимир</code></pre>
 <p>Класс <code>Person</code> модифицирован:</p>
 <ul>
     <li>Поле <code>name</code> теперь типа <code>Name</code> вместо <code>String</code></li>
-    <li>Добавлены новые конструкторы</li>
+    <li>Добавлены новые конструкторы для работы с объектом Name: <code>Person(Name name, int height)</code></li>
     <li>Метод <code>toString()</code> обновлен для работы с объектом Name</li>
 </ul>
 
@@ -160,7 +160,7 @@ Person person3 = new Person(new Name("Маяковский", "Владимир")
 <ul>
     <li>Поле <code>name</code> - название города</li>
     <li>Поле <code>routes</code> - карта путей к другим городам с стоимостью</li>
-    <li>Методы для добавления/удаления путей</li>
+    <li>Методы для добавления/удаления путей: <code>addRoute(City city, int cost)</code>, <code>removeRoute(City city)</code></li>
     <li>Метод <code>toString()</code> для текстового представления</li>
 </ul>
 
@@ -184,9 +184,9 @@ System.out.println(a);
 <h3>Решение</h3>
 <p>Класс <code>City</code> расширен:</p>
 <ul>
-    <li>Добавлена валидация названия города</li>
-    <li>Добавлена проверка уникальности названий</li>
-    <li>Реализованы оба типа конструкторов</li>
+    <li>Добавлена валидация названия города: <code>Validation.isValidCityName()</code></li>
+    <li>Добавлена проверка уникальности названий: <code>Validation.isCityNameUnique(String name, List<City> cities)</code></li>
+    <li>Реализованы оба типа конструкторов: <code>City(String name)</code>, <code>City(String name, Map<City, Integer> routes)</code></li>
 </ul>
 
 <h3>Пример использования</h3>
@@ -211,9 +211,9 @@ City city2 = new City("B", routes);</code></pre>
 <p>Класс <code>Fraction</code> содержит:</p>
 <ul>
     <li>Поля <code>numerator</code> и <code>denominator</code></li>
-    <li>Конструкторы для создания дробей</li>
-    <li>Методы арифметических операций</li>
-    <li>Метод упрощения дробей</li>
+    <li>Конструкторы для создания дробей: <code>Fraction(int numerator, int denominator)</code>, <code>Fraction(int number)</code></li>
+    <li>Методы арифметических операций: <code>add(Fraction other)</code>, <code>subtract(Fraction other)</code>, <code>multiply(Fraction other)</code>, <code>divide(Fraction other)</code></li>
+    <li>Метод упрощения дробей: <code>simplify()</code> и вспомогательный метод для нахождения НОД: <code>gcd(int a, int b)</code></li>
     <li>Переопределенный метод <code>toString()</code></li>
 </ul>
 
