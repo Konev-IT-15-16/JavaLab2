@@ -95,7 +95,7 @@ int height = Validation.getInputInt(scanner, "Введите рост: ", 1, 300
 <p>Класс <code>Person</code> содержит:</p>
 <ul>
     <li>Приватные поля <code>name</code> (строка) и <code>height</code> (целое число)</li>
-    <li>Конструктор с параметрами имени и роста: <code>Person(Name name, int height)</code>, <code>Person(String firstName, int height)</code>, <code>Person(String lastName, String firstName, int height)</code>, <code>Person(String lastName, String firstName, String middleName, int height)</code></li>
+    <li>Конструктор с параметрами имени и роста: <code>Person(String firstName, int height)</code>, <code>Person(String lastName, String firstName, int height)</code>, <code>Person(String lastName, String firstName, String middleName, int height)</code></li>
     <li>Геттеры и сеттеры для полей: <code>getName()</code>, <code>setName(Name name)</code>, <code>getHeight()</code>, <code>setHeight(int height)</code></li>
     <li>Переопределенный метод <code>toString()</code>, возвращающий строку формата <code>"Имя: name, рост: height см"</code></li>
 </ul>
