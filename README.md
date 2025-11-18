@@ -95,8 +95,8 @@ int height = Validation.getInputInt(scanner, "Введите рост: ", 1, 300
 <p>Класс <code>Person</code> содержит:</p>
 <ul>
     <li>Приватные поля <code>name</code> (строка) и <code>height</code> (целое число)</li>
-    <li>Конструктор с параметрами имени и роста</li>
-    <li>Геттеры и сеттеры для полей</li>
+    <li>Конструктор с параметрами имени и роста: <code>Person(Name name, int height)</code>, <code>Person(String firstName, int height)</code>, <code>Person(String lastName, String firstName, int height)</code>, <code>Person(String lastName, String firstName, String middleName, int height)</code></li>
+    <li>Геттеры и сеттеры для полей: <code>getName()</code>, <code>setName(Name name)</code>, <code>getHeight()</code>, <code>setHeight(int height)</code></li>
     <li>Переопределенный метод <code>toString()</code>, возвращающий строку формата <code>"Имя: name, рост: height см"</code></li>
 </ul>
 
@@ -124,8 +124,8 @@ System.out.println(person3); // Имя: Владимир, рост: 189 см</co
 <p>Класс <code>Name</code> содержит:</p>
 <ul>
     <li>Приватные поля <code>lastName</code>, <code>firstName</code>, <code>middleName</code></li>
-    <li>Конструкторы для разных комбинаций параметров</li>
-    <li>Методы проверки наличия компонентов имени</li>
+    <li>Конструкторы для разных комбинаций параметров: <code>Name()</code>, <code>Name(String firstName)</code>, <code>Name(String lastName, String firstName)</code>, <code>Name(String lastName, String firstName, String middleName)</code></li>
+    <li>Методы проверки наличия компонентов имени: <code>hasLastName()</code>, <code>hasFirstName()</code>, <code>hasMiddleName()</code></li>
     <li>Переопределенный метод <code>toString()</code>, который формирует строку только из заданных компонентов</li>
 </ul>
 
