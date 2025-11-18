@@ -107,6 +107,9 @@ Person person3 = new Person("Владимир", 189);
 System.out.println(person1); // Имя: Клеопатра, рост: 152 см
 System.out.println(person2); // Имя: Пушкин, рост: 167 см
 System.out.println(person3); // Имя: Владимир, рост: 189 см</code></pre>
+<div align "center">
+  <img src="./screenshots/Person.png" alt="Имя и рост" width="600"/>
+</div>
 
 <h2>Задание 1.3: Имена</h2>
 <h3>Условие</h3>
@@ -133,6 +136,9 @@ Name name3 = new Name("Маяковский", "Владимир");
 System.out.println(name1); // Клеопатра
 System.out.println(name2); // Пушкин Александр Сергеевич
 System.out.println(name3); // Маяковский Владимир</code></pre>
+<div align "center">
+  <img src="./screenshots/Name.png" alt="Имена" width="600"/>
+</div>
 
 <h2>Задание 2.2: Человек с именем</h2>
 <h3>Условие</h3>
@@ -150,6 +156,9 @@ System.out.println(name3); // Маяковский Владимир</code></pre>
 <pre><code>Person person1 = new Person(new Name("Клеопатра"), 152);
 Person person2 = new Person(new Name("Пушкин", "Александр", "Сергеевич"), 167);
 Person person3 = new Person(new Name("Маяковский", "Владимир"), 189);</code></pre>
+<div align "center">
+  <img src="./screenshots/Name2.png" alt="Личности" width="600"/>
+</div>
 
 <h2>Задание 3.3: Города</h2>
 <h3>Условие</h3>
@@ -172,6 +181,9 @@ System.out.println(a);
 // Город: A
 // Связанные города:
 //   - B: 5</code></pre>
+<div align "center">
+  <img src="./screenshots/City2.png" alt="Создание путей" width="600"/>
+</div>
 
 <h2>Задание 4.8: Создаем Города</h2>
 <h3>Условие</h3>
@@ -192,11 +204,17 @@ System.out.println(a);
 <h3>Пример использования</h3>
 <pre><code>// Создание города только с названием
 City city1 = new City("A");
+<div align "center">
+  <img src="./screenshots/City3.png" alt="Создание города по названию" width="600"/>
+</div>
 
 // Создание города с путями
 Map<City, Integer> routes = new HashMap<>();
 routes.put(cityB, 5);
 City city2 = new City("B", routes);</code></pre>
+<div align "center">
+  <img src="./screenshots/City4.png" alt="Создание города с путями" width="600"/>
+</div>
 
 <h2>Задание 5.5: Дроби</h2>
 <h3>Условие</h3>
